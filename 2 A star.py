@@ -88,3 +88,61 @@ astar(graph, h, start, goal)
 #      \     /
 #     4 \   / 1
 #        (2)
+
+
+
+# new diragram
+# -------- GRAPH DIAGRAM --------
+#
+#              (A)
+#            /  |  \
+#         1 /   |4  \3
+#          /    |    \
+#        (B)   (C)   (D)
+#        /  \      \    \
+#     5 /    \2     \1   \6
+#      /      \      \    \
+#    (E)      (F)-----(G)
+#                2
+#
+# Goal Node = G
+#
+# Heuristic Values:
+# h(A)=7
+# h(B)=6
+# h(C)=2
+# h(D)=4
+# h(E)=5
+# h(F)=1
+# h(G)=0
+#
+# Optimal Path:
+# A → C → G
+#
+# Total Cost:
+# 4 + 1 = 5
+#
+# -------------------------------
+
+# Enter number of vertices: 7
+# Enter number of edges: 7
+
+# 0 1 1
+# 0 2 4
+# 0 3 3
+# 1 4 5
+# 1 5 2
+# 2 6 1
+# 5 6 2
+
+# Heuristic Values:
+# 0 → 7
+# 1 → 6
+# 2 → 2
+# 3 → 4
+# 4 → 5
+# 5 → 1
+# 6 → 0
+
+# Start = 0
+# Goal = 6
